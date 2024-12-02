@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+
+    body{
+      background-color: hsl(30, 38%, 92%);
+    }
+    .container{ margin-top:200px;}
+    .card { width:550px; margin:auto;}
+    .row{ display:flex;}
+    .content{ padding:30px; background: white;border-top-right-radius: 9px;border-bottom-right-radius: 9px;}
+    .img{ width:275px;height:100%; border-top-left-radius: 9px;border-bottom-left-radius: 9px; background-image: url("./images/image-product-desktop.jpg");  background-repeat: no-repeat;
+    background-size: cover;}
+    @media screen and (max-width: 600px) {
+      .row{
+        display:block;
+        padding:20px;
+
+      }
+      .card{
+        width:100%;
+      }
+      .image{
+        height:250px;
+      }
+      .img{
+        background-image: url("./images/image-product-mobile.jpg");
+        width:100%;
+        height:100%;
+        border-radius: 12px 12px 0 0;
+      }
+      .container{
+        margin-top:0px;
+      }
+      .content{
+        border-radius: 0 0 12px 12px;
+      }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="row">
+        <div class="image"><img  class="img"/></div>
+        <div class="content">
+          <h2 style="font-family: Montserrat;font-weight: 300;text-transform: uppercase;letter-spacing: 4px;font-size: 18px;">Perfume</h2>
+          <h1 style="font-family: Fraunces;">Gabrielle Essence Eau De Parfum</h1>
+          
+          <p style="font-family: Montserrat;line-height: 25px;">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+          <div style="display:flex;align-items: center;"> 
+          <h1 style="display: inline;color:hsl(158, 36%, 37%);margin-right:15px; font-family: Fraunces;">$149.99</h1>
+          <span style="text-decoration: line-through;">$169.99</span>
+        </div>
+          <button style=" width: 100%;
+          background: hsl(158, 36%, 37%);
+          display:flex;
+          justify-content: center;
+          padding: 12px;
+          border: none;
+          font-family:Montserrat;
+          color: white;
+          font-weight: 600;
+          border-radius: 7px;
+  "><img src="./images/icon-cart.svg" style="margin-right: 15px;">Add to Cart</button>
+          
+        </div>
+      </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
